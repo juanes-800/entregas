@@ -1,0 +1,19 @@
+{
+  "name": "entregas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "productManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanes-800/entregas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanes-800/entregas/issues"
+  },
+  "homepage": "https://github.com/juanes-800/entregas#readme"
+}
