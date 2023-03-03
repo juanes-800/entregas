@@ -61,7 +61,7 @@ class ProductManager {
 
   deleteProduct(id){
     let data = this.readFile();
-    let indice = data.finIndex(product => product.id == id)
+    let indice = data.findIndex(product => product.id == id)
 
     if(indice >= 0){
       data.splice(indice,1)
@@ -74,21 +74,23 @@ class ProductManager {
 
 let producto = new ProductManager("data.json");
 
-producto.addProd(
-  "Amalaki",
-  "vitaminadsd",
-  20000,
-  "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/AMALAKI.jpg?v=1600114241",
-  12349,
-  10
-);
-producto.addProd(
-  "Te meishen limón",
-  " te",
-  29000,
-  "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/Te-Meishen-tarro.jpg?v=1600114638",
-  124,
-  11
-);
+// producto.addProd(
+//   "Amalaki",
+//   "vitaminadsd",
+//   20000,
+//   "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/AMALAKI.jpg?v=1600114241",
+//   12349,
+//   10
+// );
+// producto.addProd(
+//   "Te meishen limón",
+//   " te",
+//   29000,
+//   "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/Te-Meishen-tarro.jpg?v=1600114638",
+//   124,
+//   11
+// );
 
 // producto.getProductByid(3);
+console.log(producto.deleteProduct(1)); 
+  
