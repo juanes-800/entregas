@@ -71,5 +71,5 @@ producto.addProd(
   10
 );
 
-// console.log(producto.getProduct()); 
-producto.getProductByid(3); 
+console.log(producto.getProduct()); 
+// producto.getProductByid(3); 
