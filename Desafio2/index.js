@@ -20,16 +20,8 @@ class ProductManager {
     return data;
   }
 
-  addProd(title, description, price, thumbanail, code, stock) {
-    const product = {
-      id: this.products.length == 0 ? 1 : this.products.length + 1,
-      title,
-      description,
-      price,
-      thumbanail,
-      code,
-      stock,
-    };
+  addProduct(product) {
+
     const repCode = this.products.find((item) => item.code === product.code);
     if (repCode) {
       throw new Error("existing code");
@@ -48,7 +40,7 @@ class ProductManager {
     this.writeData(data);
   }
 
-  getProductByid(id) {
+  getProductByID(id) {
     let data = this.readFile();
     const save = data.find((item) => Number(item.id == id));
 
@@ -70,27 +62,68 @@ class ProductManager {
     }
     throw new Error('There is no product to delete id')
   }
+   updateProduct(id, data) {
+    let products = this.readFile();
+
+    let indice = products.findIndex((product) => product.id == id);
+
+    if (indice >= 0) {
+      const actualizar = products[indice]
+      Object.assign(actualizar, data);
+    } else{
+      throw new Error('No se encuentra id a modificar');
+    }
+    
+    this.writeData(products);
+  }
 }
 
-let producto = new ProductManager("data.json");
+class Product {
+  static countProduct = 1;
+  constructor(title, description, price, thumbanail, code, stock) {
+    this.id = Product.countProduct++;
+    this.title = title;
+    this.description = description;
+    this.price = price;
+    this.thumbanail = thumbanail;
+    this.code = code;
+    this.stock = stock;
+  }
+}
 
-// producto.addProd(
-//   "Amalaki",
-//   "vitaminadsd",
-//   20000,
-//   "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/AMALAKI.jpg?v=1600114241",
-//   12349,
-//   10
-// );
-// producto.addProd(
-//   "Te meishen limón",
-//   " te",
-//   29000,
-//   "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/Te-Meishen-tarro.jpg?v=1600114638",
-//   124,
-//   11
-// );
 
-// producto.getProductByid(3);
-console.log(producto.deleteProduct(1)); 
+let persona1 = new ProductManager("data.json");
+
+let producto0 = new Product( "Amalaki",
+"vitaminadsd",
+20000,
+"https://cdn.shopify.com/s/files/1/0455/4224/4511/products/AMALAKI.jpg?v=1600114241",
+12349,
+10);
+
+let producto1 = new Product("Te meishen limón",
+" te",
+29000,
+"https://cdn.shopify.com/s/files/1/0455/4224/4511/products/Te-Meishen-tarro.jpg?v=1600114638",
+124,
+11);
+
+// persona1.addProduct(producto0);
+// persona1.addProduct(producto1);
+// error ya existe el code
+// persona1.addProduct(producto1);
+
+// Buscar producto
+// persona1.getProductByID(1)
+
+// Eliminar producto
+// persona1.deleteProduct(1)
+persona1.updateProduct(1,{
   
+  title: 'cambiando',
+  description: ' rojo',
+  price: 20000,
+  thumbanail: 'img',
+  code: 124,
+  stock: 19456
+})
