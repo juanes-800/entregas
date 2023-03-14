@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Amalaki",
+    "description": "vitamina",
+    "price": 20000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/AMALAKI.jpg?v=1600114241",
+    "code": 123,
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Te meishen limón",
+    "description": " te",
+    "price": 29000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/Te-Meishen-tarro.jpg?v=1600114638",
+    "code": 124,
+    "stock": 11
+  },
+  {
+    "id": 3,
+    "title": "Levadura de cerveza",
+    "description": "vitamina",
+    "price": 40000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/LEVADURA-CERVEZA100.jpg?v=1600114457",
+    "code": 125,
+    "stock": 12
+  },
+  {
+    "id": 4,
+    "title": "Echinacea",
+    "description": "vitamina",
+    "price": 60000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/ECHINACEA.jpg?v=1600114354",
+    "code": 126,
+    "stock": 13
+  },
+  {
+    "id": 5,
+    "title": "Biotin",
+    "description": "te",
+    "price": 61000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/BIOTIN-COLLAGEN.jpg?v=1600114276",
+    "code": 127,
+    "stock": 14
+  },
+  {
+    "id": 6,
+    "title": "Clorofila purrcell",
+    "description": "vitamina",
+    "price": 20850,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/A397.jpg?v=1622465157",
+    "code": 128,
+    "stock": 15
+  },
+  {
+    "id": 7,
+    "title": " Te Formad",
+    "description": "te",
+    "price": 18400,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/TE-FORMA-LIGHT.jpg?v=1600114639",
+    "code": 129,
+    "stock": 16
+  },
+  {
+    "id": 8,
+    "title": "Vitacer",
+    "description": "vitamina",
+    "price": 70000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/A796.png?v=1600114711",
+    "code": 130,
+    "stock": 17
+  },
+  {
+    "id": 9,
+    "title": "Garcinia",
+    "description": "vitamina",
+    "price": 50000,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/GARCINIA.jpg?v=1600114395",
+    "code": 131,
+    "stock": 18
+  },
+  {
+    "id": 10,
+    "title": "Te relaxnat",
+    "description": "te",
+    "price": 14800,
+    "thumbanail": "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/TE-RELAXNAT.jpg?v=1600114639",
+    "code": 132,
+    "stock": 19
+  }
+]

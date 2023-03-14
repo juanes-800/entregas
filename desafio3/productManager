@@ -113,9 +113,6 @@ let producto8 = new Product("Garcinia", "vitamina", 50000, "https://cdn.shopify.
 
 let producto9 = new Product("Te relaxnat", "te", 14800, "https://cdn.shopify.com/s/files/1/0455/4224/4511/products/TE-RELAXNAT.jpg?v=1600114639", 132, 19);
 
-
-// 1
-
 // productList.addProduct(producto0);
 // productList.addProduct(producto1);
 // productList.addProduct(producto2);
@@ -155,3 +152,7 @@ let producto9 = new Product("Te relaxnat", "te", 14800, "https://cdn.shopify.com
 //     code: 124,
 //     stock: 19456
 // })
+
+module.exports = {
+  ProductManager: productList
+}
